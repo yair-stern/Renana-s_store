@@ -1,0 +1,164 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    background: linear-gradient(135deg, #2f3640, #353b48);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #e84118, #c23616);
+    color: #ffffff;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+header nav {
+    margin-top: 1rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #ffffff;
+    background: transparent;
+    border: 2px solid #ffffff;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+header nav a:hover {
+    background: #ffffff;
+    color: #c23616;
+}
+
+/* Sections */
+section {
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 1200px;
+    background: linear-gradient(135deg, #f5f6fa, #dcdde1);
+    color: #2f3640;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    color: #e84118;
+    border-bottom: 4px solid #c23616;
+    display: inline-block;
+}
+
+/* Cards */
+.card {
+    background: #ffffff;
+    color: #2f3640;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card h3 {
+    color: #e84118;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Buttons */
+button, a.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    margin-top: 1rem;
+    background: #e84118;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover, a.btn:hover {
+    background: #ffffff;
+    color: #e84118;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #353b48, #2f3640);
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+footer span {
+    color: #e84118;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header nav a {
+        padding: 0.4rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+    footer {
+        padding: 1.5rem;
+    }
+}
